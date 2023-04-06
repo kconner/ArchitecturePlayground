@@ -8,12 +8,27 @@
 
 /* Begin PBXBuildFile section */
 		2CC1E70929DE696400CD85E3 /* ArchitecturePlaygroundApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC1E70829DE696400CD85E3 /* ArchitecturePlaygroundApp.swift */; };
-		2CC1E70B29DE696400CD85E3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC1E70A29DE696400CD85E3 /* ContentView.swift */; };
 		2CC1E70D29DE696400CD85E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CC1E70C29DE696400CD85E3 /* Assets.xcassets */; };
 		2CC1E71029DE696400CD85E3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CC1E70F29DE696400CD85E3 /* Preview Assets.xcassets */; };
 		2CC1E71A29DE696400CD85E3 /* ArchitecturePlaygroundTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC1E71929DE696400CD85E3 /* ArchitecturePlaygroundTests.swift */; };
 		2CC1E72429DE696400CD85E3 /* ArchitecturePlaygroundUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC1E72329DE696400CD85E3 /* ArchitecturePlaygroundUITests.swift */; };
 		2CC1E72629DE696400CD85E3 /* ArchitecturePlaygroundUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC1E72529DE696400CD85E3 /* ArchitecturePlaygroundUITestsLaunchTests.swift */; };
+		2CC1E73429DE698300CD85E3 /* WeatherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC1E73329DE698300CD85E3 /* WeatherService.swift */; };
+		2CC1E73729DE72C200CD85E3 /* WeatherData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC1E73629DE72C200CD85E3 /* WeatherData.swift */; };
+		2CC1E73929DE72D800CD85E3 /* WeatherError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC1E73829DE72D800CD85E3 /* WeatherError.swift */; };
+		2CC1E73B29DE734A00CD85E3 /* CurrencyService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC1E73A29DE734A00CD85E3 /* CurrencyService.swift */; };
+		2CC1E73E29DE73AA00CD85E3 /* CurrencyError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC1E73D29DE73AA00CD85E3 /* CurrencyError.swift */; };
+		2CC1E74029DE73C200CD85E3 /* ExchangeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC1E73F29DE73C200CD85E3 /* ExchangeData.swift */; };
+		2CC1E74229DE745E00CD85E3 /* TripService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC1E74129DE745E00CD85E3 /* TripService.swift */; };
+		2CC1E74529DE74B200CD85E3 /* TripInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC1E74429DE74B200CD85E3 /* TripInfo.swift */; };
+		2CC1E74729DE779600CD85E3 /* TripError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC1E74629DE779600CD85E3 /* TripError.swift */; };
+		2CC1E74A29DE7B1200CD85E3 /* TripState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC1E74929DE7B1200CD85E3 /* TripState.swift */; };
+		2CC1E74C29DE7E3C00CD85E3 /* TripsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC1E74B29DE7E3C00CD85E3 /* TripsView.swift */; };
+		2CC1E74E29DE7EBE00CD85E3 /* AddTripView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC1E74D29DE7EBE00CD85E3 /* AddTripView.swift */; };
+		2CC1E75029DE843D00CD85E3 /* TripServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC1E74F29DE843D00CD85E3 /* TripServiceProtocol.swift */; };
+		2CC1E75229DE853B00CD85E3 /* FakeTripService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC1E75129DE853B00CD85E3 /* FakeTripService.swift */; };
+		2CC1E75429DE8BA900CD85E3 /* TripDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC1E75329DE8BA900CD85E3 /* TripDetailView.swift */; };
+		2CC1E75729DE96C800CD85E3 /* EnvironmentValues+TripService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC1E75629DE96C800CD85E3 /* EnvironmentValues+TripService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +51,6 @@
 /* Begin PBXFileReference section */
 		2CC1E70529DE696400CD85E3 /* ArchitecturePlayground.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ArchitecturePlayground.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CC1E70829DE696400CD85E3 /* ArchitecturePlaygroundApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchitecturePlaygroundApp.swift; sourceTree = "<group>"; };
-		2CC1E70A29DE696400CD85E3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		2CC1E70C29DE696400CD85E3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2CC1E70F29DE696400CD85E3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		2CC1E71529DE696400CD85E3 /* ArchitecturePlaygroundTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ArchitecturePlaygroundTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +58,22 @@
 		2CC1E71F29DE696400CD85E3 /* ArchitecturePlaygroundUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ArchitecturePlaygroundUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CC1E72329DE696400CD85E3 /* ArchitecturePlaygroundUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchitecturePlaygroundUITests.swift; sourceTree = "<group>"; };
 		2CC1E72529DE696400CD85E3 /* ArchitecturePlaygroundUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchitecturePlaygroundUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		2CC1E73329DE698300CD85E3 /* WeatherService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherService.swift; sourceTree = "<group>"; };
+		2CC1E73629DE72C200CD85E3 /* WeatherData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherData.swift; sourceTree = "<group>"; };
+		2CC1E73829DE72D800CD85E3 /* WeatherError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherError.swift; sourceTree = "<group>"; };
+		2CC1E73A29DE734A00CD85E3 /* CurrencyService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyService.swift; sourceTree = "<group>"; };
+		2CC1E73D29DE73AA00CD85E3 /* CurrencyError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyError.swift; sourceTree = "<group>"; };
+		2CC1E73F29DE73C200CD85E3 /* ExchangeData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeData.swift; sourceTree = "<group>"; };
+		2CC1E74129DE745E00CD85E3 /* TripService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripService.swift; sourceTree = "<group>"; };
+		2CC1E74429DE74B200CD85E3 /* TripInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripInfo.swift; sourceTree = "<group>"; };
+		2CC1E74629DE779600CD85E3 /* TripError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripError.swift; sourceTree = "<group>"; };
+		2CC1E74929DE7B1200CD85E3 /* TripState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripState.swift; sourceTree = "<group>"; };
+		2CC1E74B29DE7E3C00CD85E3 /* TripsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripsView.swift; sourceTree = "<group>"; };
+		2CC1E74D29DE7EBE00CD85E3 /* AddTripView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTripView.swift; sourceTree = "<group>"; };
+		2CC1E74F29DE843D00CD85E3 /* TripServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripServiceProtocol.swift; sourceTree = "<group>"; };
+		2CC1E75129DE853B00CD85E3 /* FakeTripService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeTripService.swift; sourceTree = "<group>"; };
+		2CC1E75329DE8BA900CD85E3 /* TripDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripDetailView.swift; sourceTree = "<group>"; };
+		2CC1E75629DE96C800CD85E3 /* EnvironmentValues+TripService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EnvironmentValues+TripService.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +124,10 @@
 		2CC1E70729DE696400CD85E3 /* ArchitecturePlayground */ = {
 			isa = PBXGroup;
 			children = (
+				2CC1E73229DE697600CD85E3 /* Services */,
+				2CC1E74829DE7B0500CD85E3 /* Stores */,
+				2CC1E75529DE900100CD85E3 /* Views */,
 				2CC1E70829DE696400CD85E3 /* ArchitecturePlaygroundApp.swift */,
-				2CC1E70A29DE696400CD85E3 /* ContentView.swift */,
 				2CC1E70C29DE696400CD85E3 /* Assets.xcassets */,
 				2CC1E70E29DE696400CD85E3 /* Preview Content */,
 			);
@@ -125,6 +157,67 @@
 				2CC1E72529DE696400CD85E3 /* ArchitecturePlaygroundUITestsLaunchTests.swift */,
 			);
 			path = ArchitecturePlaygroundUITests;
+			sourceTree = "<group>";
+		};
+		2CC1E73229DE697600CD85E3 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				2CC1E73529DE72A100CD85E3 /* Weather */,
+				2CC1E73C29DE73A000CD85E3 /* Currency */,
+				2CC1E74329DE74A800CD85E3 /* Trip */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		2CC1E73529DE72A100CD85E3 /* Weather */ = {
+			isa = PBXGroup;
+			children = (
+				2CC1E73329DE698300CD85E3 /* WeatherService.swift */,
+				2CC1E73629DE72C200CD85E3 /* WeatherData.swift */,
+				2CC1E73829DE72D800CD85E3 /* WeatherError.swift */,
+			);
+			path = Weather;
+			sourceTree = "<group>";
+		};
+		2CC1E73C29DE73A000CD85E3 /* Currency */ = {
+			isa = PBXGroup;
+			children = (
+				2CC1E73A29DE734A00CD85E3 /* CurrencyService.swift */,
+				2CC1E73D29DE73AA00CD85E3 /* CurrencyError.swift */,
+				2CC1E73F29DE73C200CD85E3 /* ExchangeData.swift */,
+			);
+			path = Currency;
+			sourceTree = "<group>";
+		};
+		2CC1E74329DE74A800CD85E3 /* Trip */ = {
+			isa = PBXGroup;
+			children = (
+				2CC1E74F29DE843D00CD85E3 /* TripServiceProtocol.swift */,
+				2CC1E74129DE745E00CD85E3 /* TripService.swift */,
+				2CC1E74429DE74B200CD85E3 /* TripInfo.swift */,
+				2CC1E74629DE779600CD85E3 /* TripError.swift */,
+				2CC1E75129DE853B00CD85E3 /* FakeTripService.swift */,
+				2CC1E75629DE96C800CD85E3 /* EnvironmentValues+TripService.swift */,
+			);
+			path = Trip;
+			sourceTree = "<group>";
+		};
+		2CC1E74829DE7B0500CD85E3 /* Stores */ = {
+			isa = PBXGroup;
+			children = (
+				2CC1E74929DE7B1200CD85E3 /* TripState.swift */,
+			);
+			path = Stores;
+			sourceTree = "<group>";
+		};
+		2CC1E75529DE900100CD85E3 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2CC1E74B29DE7E3C00CD85E3 /* TripsView.swift */,
+				2CC1E74D29DE7EBE00CD85E3 /* AddTripView.swift */,
+				2CC1E75329DE8BA900CD85E3 /* TripDetailView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,7 +350,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2CC1E70B29DE696400CD85E3 /* ContentView.swift in Sources */,
+				2CC1E75729DE96C800CD85E3 /* EnvironmentValues+TripService.swift in Sources */,
+				2CC1E73929DE72D800CD85E3 /* WeatherError.swift in Sources */,
+				2CC1E74229DE745E00CD85E3 /* TripService.swift in Sources */,
+				2CC1E74E29DE7EBE00CD85E3 /* AddTripView.swift in Sources */,
+				2CC1E74029DE73C200CD85E3 /* ExchangeData.swift in Sources */,
+				2CC1E74C29DE7E3C00CD85E3 /* TripsView.swift in Sources */,
+				2CC1E74529DE74B200CD85E3 /* TripInfo.swift in Sources */,
+				2CC1E75229DE853B00CD85E3 /* FakeTripService.swift in Sources */,
+				2CC1E75029DE843D00CD85E3 /* TripServiceProtocol.swift in Sources */,
+				2CC1E74729DE779600CD85E3 /* TripError.swift in Sources */,
+				2CC1E73E29DE73AA00CD85E3 /* CurrencyError.swift in Sources */,
+				2CC1E75429DE8BA900CD85E3 /* TripDetailView.swift in Sources */,
+				2CC1E73B29DE734A00CD85E3 /* CurrencyService.swift in Sources */,
+				2CC1E73429DE698300CD85E3 /* WeatherService.swift in Sources */,
+				2CC1E73729DE72C200CD85E3 /* WeatherData.swift in Sources */,
+				2CC1E74A29DE7B1200CD85E3 /* TripState.swift in Sources */,
 				2CC1E70929DE696400CD85E3 /* ArchitecturePlaygroundApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
