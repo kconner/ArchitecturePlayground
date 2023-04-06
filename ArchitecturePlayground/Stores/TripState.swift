@@ -7,6 +7,7 @@
 
 import Foundation
 
+/// Stores trips in memory for views to consume.
 class TripState: ObservableObject {
     
     private let tripService: any TripServiceProtocol

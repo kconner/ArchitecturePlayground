@@ -28,7 +28,10 @@
 		2CC1E75029DE843D00CD85E3 /* TripServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC1E74F29DE843D00CD85E3 /* TripServiceProtocol.swift */; };
 		2CC1E75229DE853B00CD85E3 /* FakeTripService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC1E75129DE853B00CD85E3 /* FakeTripService.swift */; };
 		2CC1E75429DE8BA900CD85E3 /* TripDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC1E75329DE8BA900CD85E3 /* TripDetailView.swift */; };
-		2CC1E75729DE96C800CD85E3 /* EnvironmentValues+TripService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC1E75629DE96C800CD85E3 /* EnvironmentValues+TripService.swift */; };
+		2CC1E75929DE987400CD85E3 /* WeatherServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC1E75829DE987400CD85E3 /* WeatherServiceProtocol.swift */; };
+		2CC1E75B29DE988900CD85E3 /* CurrencyServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC1E75A29DE988900CD85E3 /* CurrencyServiceProtocol.swift */; };
+		2CC1E75D29DE989C00CD85E3 /* FakeWeatherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC1E75C29DE989C00CD85E3 /* FakeWeatherService.swift */; };
+		2CC1E75F29DE98AA00CD85E3 /* FakeCurrencyService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC1E75E29DE98AA00CD85E3 /* FakeCurrencyService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,7 +76,10 @@
 		2CC1E74F29DE843D00CD85E3 /* TripServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripServiceProtocol.swift; sourceTree = "<group>"; };
 		2CC1E75129DE853B00CD85E3 /* FakeTripService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeTripService.swift; sourceTree = "<group>"; };
 		2CC1E75329DE8BA900CD85E3 /* TripDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripDetailView.swift; sourceTree = "<group>"; };
-		2CC1E75629DE96C800CD85E3 /* EnvironmentValues+TripService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EnvironmentValues+TripService.swift"; sourceTree = "<group>"; };
+		2CC1E75829DE987400CD85E3 /* WeatherServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherServiceProtocol.swift; sourceTree = "<group>"; };
+		2CC1E75A29DE988900CD85E3 /* CurrencyServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyServiceProtocol.swift; sourceTree = "<group>"; };
+		2CC1E75C29DE989C00CD85E3 /* FakeWeatherService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeWeatherService.swift; sourceTree = "<group>"; };
+		2CC1E75E29DE98AA00CD85E3 /* FakeCurrencyService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeCurrencyService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -172,9 +178,11 @@
 		2CC1E73529DE72A100CD85E3 /* Weather */ = {
 			isa = PBXGroup;
 			children = (
+				2CC1E73829DE72D800CD85E3 /* WeatherError.swift */,
 				2CC1E73329DE698300CD85E3 /* WeatherService.swift */,
 				2CC1E73629DE72C200CD85E3 /* WeatherData.swift */,
-				2CC1E73829DE72D800CD85E3 /* WeatherError.swift */,
+				2CC1E75829DE987400CD85E3 /* WeatherServiceProtocol.swift */,
+				2CC1E75C29DE989C00CD85E3 /* FakeWeatherService.swift */,
 			);
 			path = Weather;
 			sourceTree = "<group>";
@@ -182,9 +190,11 @@
 		2CC1E73C29DE73A000CD85E3 /* Currency */ = {
 			isa = PBXGroup;
 			children = (
+				2CC1E75A29DE988900CD85E3 /* CurrencyServiceProtocol.swift */,
 				2CC1E73A29DE734A00CD85E3 /* CurrencyService.swift */,
 				2CC1E73D29DE73AA00CD85E3 /* CurrencyError.swift */,
 				2CC1E73F29DE73C200CD85E3 /* ExchangeData.swift */,
+				2CC1E75E29DE98AA00CD85E3 /* FakeCurrencyService.swift */,
 			);
 			path = Currency;
 			sourceTree = "<group>";
@@ -197,7 +207,6 @@
 				2CC1E74429DE74B200CD85E3 /* TripInfo.swift */,
 				2CC1E74629DE779600CD85E3 /* TripError.swift */,
 				2CC1E75129DE853B00CD85E3 /* FakeTripService.swift */,
-				2CC1E75629DE96C800CD85E3 /* EnvironmentValues+TripService.swift */,
 			);
 			path = Trip;
 			sourceTree = "<group>";
@@ -350,11 +359,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2CC1E75729DE96C800CD85E3 /* EnvironmentValues+TripService.swift in Sources */,
 				2CC1E73929DE72D800CD85E3 /* WeatherError.swift in Sources */,
 				2CC1E74229DE745E00CD85E3 /* TripService.swift in Sources */,
+				2CC1E75929DE987400CD85E3 /* WeatherServiceProtocol.swift in Sources */,
 				2CC1E74E29DE7EBE00CD85E3 /* AddTripView.swift in Sources */,
+				2CC1E75B29DE988900CD85E3 /* CurrencyServiceProtocol.swift in Sources */,
 				2CC1E74029DE73C200CD85E3 /* ExchangeData.swift in Sources */,
+				2CC1E75D29DE989C00CD85E3 /* FakeWeatherService.swift in Sources */,
 				2CC1E74C29DE7E3C00CD85E3 /* TripsView.swift in Sources */,
 				2CC1E74529DE74B200CD85E3 /* TripInfo.swift in Sources */,
 				2CC1E75229DE853B00CD85E3 /* FakeTripService.swift in Sources */,
@@ -363,6 +374,7 @@
 				2CC1E73E29DE73AA00CD85E3 /* CurrencyError.swift in Sources */,
 				2CC1E75429DE8BA900CD85E3 /* TripDetailView.swift in Sources */,
 				2CC1E73B29DE734A00CD85E3 /* CurrencyService.swift in Sources */,
+				2CC1E75F29DE98AA00CD85E3 /* FakeCurrencyService.swift in Sources */,
 				2CC1E73429DE698300CD85E3 /* WeatherService.swift in Sources */,
 				2CC1E73729DE72C200CD85E3 /* WeatherData.swift in Sources */,
 				2CC1E74A29DE7B1200CD85E3 /* TripState.swift in Sources */,

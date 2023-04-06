@@ -7,13 +7,14 @@
 
 import Foundation
 
+/// Abstracts operations related to trips including local storage.
 class TripService: TripServiceProtocol {
     
-    private let weatherService: WeatherService
-    private let currencyService: CurrencyService
+    private let weatherService: any WeatherServiceProtocol
+    private let currencyService: any CurrencyServiceProtocol
     private let tripsFilename: String
     
-    init(weatherService: WeatherService, currencyService: CurrencyService, tripsFilename: String = "trips.json") {
+    init(weatherService: any WeatherServiceProtocol, currencyService: any CurrencyServiceProtocol, tripsFilename: String = "trips.json") {
         self.weatherService = weatherService
         self.currencyService = currencyService
         self.tripsFilename = tripsFilename

@@ -16,7 +16,7 @@ struct ArchitecturePlaygroundApp: App {
         let tripService: any TripServiceProtocol
         
         if ProcessInfo().arguments.contains("--fake") {
-            // Fake service stack
+            // Fake service stack; only those needed by States are necessary
             tripService = FakeTripService(testData: [])
         } else {
             // Real service stack
@@ -25,7 +25,7 @@ struct ArchitecturePlaygroundApp: App {
             tripService = TripService(weatherService: weatherService, currencyService: currencyService)
         }
         
-        // In-memory data stores, one level above the view layer
+        // States in memory can use as many services as they need to
         let tripState = TripState(tripService: tripService)
         _tripState = StateObject(wrappedValue: tripState)
     }

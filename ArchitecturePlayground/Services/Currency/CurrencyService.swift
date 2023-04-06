@@ -7,7 +7,8 @@
 
 import Foundation
 
-class CurrencyService {
+/// Abstracts an exchange rate API.
+class CurrencyService: CurrencyServiceProtocol {
     
     private let apiKey: String
     private let baseURL: String

@@ -7,7 +7,8 @@
 
 import Foundation
 
-class WeatherService {
+/// Abstracts a weather API.
+class WeatherService: WeatherServiceProtocol {
     
     private let apiKey: String
     private let baseURL: String
