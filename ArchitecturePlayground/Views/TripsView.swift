@@ -37,7 +37,6 @@ struct TripsView: View {
                     }
                     .sheet(isPresented: $showAddTripModal) {
                         AddTripView()
-                            .environmentObject(tripState)
                     }
                     
                     EditButton()
